@@ -1,0 +1,47 @@
+[debug] [2023-03-07T18:23:04.654Z] ----------------------------------------------------------------------
+[debug] [2023-03-07T18:23:04.655Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\kalaj\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-03-07T18:23:04.656Z] CLI Version:   11.24.0
+[debug] [2023-03-07T18:23:04.656Z] Platform:      win32
+[debug] [2023-03-07T18:23:04.656Z] Node Version:  v16.17.1
+[debug] [2023-03-07T18:23:04.657Z] Time:          Tue Mar 07 2023 19:23:04 GMT+0100 (Mitteleuropäische Normalzeit)
+[debug] [2023-03-07T18:23:04.657Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-03-07T18:23:04.719Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-03-07T18:23:04.719Z] > authorizing via signed-in user (mouhmedkalaji30@gmail.com)
+[debug] [2023-03-07T18:23:04.719Z] [iam] checking project lebenslauf-kalaji for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-03-07T18:23:04.721Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/lebenslauf-kalaji:testIamPermissions [none]
+[debug] [2023-03-07T18:23:04.721Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/lebenslauf-kalaji:testIamPermissions x-goog-quota-user=projects/lebenslauf-kalaji
+[debug] [2023-03-07T18:23:04.722Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/lebenslauf-kalaji:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-03-07T18:23:04.975Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/lebenslauf-kalaji:testIamPermissions 200
+[debug] [2023-03-07T18:23:04.975Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/lebenslauf-kalaji:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-03-07T18:23:04.976Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/lebenslauf-kalaji [none]
+[debug] [2023-03-07T18:23:05.285Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/lebenslauf-kalaji 200
+[debug] [2023-03-07T18:23:05.285Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/lebenslauf-kalaji {"projectId":"lebenslauf-kalaji","projectNumber":"925045297491","displayName":"Lebenslauf-kalaji","name":"projects/lebenslauf-kalaji","resources":{"hostingSite":"lebenslauf-kalaji"},"state":"ACTIVE","etag":"1_684ecc64-1240-444c-8c12-6a16251f5012"}
+[info] 
+[info] === Deploying to 'lebenslauf-kalaji'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2023-03-07T18:23:05.292Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/lebenslauf-kalaji/versions [none]
+[debug] [2023-03-07T18:23:05.292Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/lebenslauf-kalaji/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2023-03-07T18:23:06.485Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/lebenslauf-kalaji/versions 200
+[debug] [2023-03-07T18:23:06.485Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/lebenslauf-kalaji/versions {"name":"projects/925045297491/sites/lebenslauf-kalaji/versions/adaa7ad95468148d","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[lebenslauf-kalaji]: beginning deploy... 
+[debug] [2023-03-07T18:23:06.586Z] Error: EPERM: operation not permitted, scandir 'C:/Users/kalaj/Desktop/Desk/Lebenslauf-React/lebenslauf/build/index.html'
+    at Object.readdirSync (node:fs:1442:3)
+    at GlobSync._readdir (C:\Users\kalaj\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:285:46)
+    at GlobSync._readdirInGlobStar (C:\Users\kalaj\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:242:17)
+    at GlobSync._readdir (C:\Users\kalaj\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:273:17)
+    at GlobSync._processReaddir (C:\Users\kalaj\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:134:22)
+    at GlobSync._process (C:\Users\kalaj\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:129:10)
+    at GlobSync._processGlobStar (C:\Users\kalaj\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:377:10)
+    at GlobSync._process (C:\Users\kalaj\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:127:10)
+    at new GlobSync (C:\Users\kalaj\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:45:10)
+    at globSync (C:\Users\kalaj\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:23:10)
+    at listFiles (C:\Users\kalaj\AppData\Roaming\npm\node_modules\firebase-tools\lib\listFiles.js:6:28)
+    at runDeploys (C:\Users\kalaj\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\hosting\deploy.js:44:49)
+    at deploy (C:\Users\kalaj\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\hosting\deploy.js:89:12)
+    at chain (C:\Users\kalaj\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:35:15)
+    at deploy (C:\Users\kalaj\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:80:11)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: An unexpected error has occurred.

@@ -1,0 +1,14 @@
+import React from "react";
+import Nav from "../components/Nav";
+// import "../style/blog-contact.css";
+import LoadingPage from "../Pages/Loadingpage";
+const Contact = () => {
+  return (
+    <div className="">
+      <Nav />
+      <LoadingPage />
+    </div>
+  );
+};
+
+export default Contact;

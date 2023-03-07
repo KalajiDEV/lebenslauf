@@ -1,0 +1,131 @@
+.pic img {
+  width: 400px;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+:root {
+  --black: #000;
+  --yellow: #dba507;
+  --white: #fef7e3;
+}
+
+.homePage {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.homePage h1 {
+  text-transform: uppercase;
+  font-size: 40px;
+  letter-spacing: 2px;
+  line-height: 1;
+  color: var(--yellow);
+}
+
+.homePage p {
+  text-transform: capitalize;
+  font-size: 20px;
+  padding: 10px 0;
+  color: var(--white);
+}
+
+.homePage button {
+  color: var(--white);
+  border: 1px solid var(--yellow);
+  outline: none;
+  background: none;
+  padding: 10px 30px;
+  background: none;
+  margin-top: 7px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.homePage button:hover {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.pic {
+  position: relative;
+}
+
+.pic:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  /* box-shadow: 0 0 5px rgba(255, 255, 255, 0.3); */
+  box-shadow: var(--yellow) 10px 2px 0;
+  animation: rotate 3s linear infinite;
+}
+
+.socialMedia svg {
+  color: var(--white);
+  font-size: 2rem;
+  display: inline-flex;
+  margin-right: 20px;
+  margin-top: 20px;
+  transition: all 0.2s ease-in;
+}
+.socialMedia svg:hover {
+  transform: scale(1.4);
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 900px) {
+  .homePage {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+  }
+
+  .homePage h1 {
+    text-align: center;
+    padding: 30px 0 0;
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  .pic img {
+    width: 400px;
+  }
+
+  .info {
+    text-align: center;
+  }
+
+  .socialMedia a {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 800px) {
+  .homePage h1 {
+    padding: 10px 0 0;
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  .pic img {
+    width: 300px;
+  }
+}

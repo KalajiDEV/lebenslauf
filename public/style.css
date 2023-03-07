@@ -1,0 +1,20 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white-: #222222;
+  --yellow-: #dba507;
+  --black: #000;
+  --color-: #ff0303;
+}
+
+body {
+  background: #222;
+}
+
+html {
+  scroll-behavior: smooth;
+}
