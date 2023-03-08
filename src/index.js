@@ -1,33 +1,8 @@
-// import React from "react";
-// import ReactDOM from "react-dom/client";
-// import "./index.css";
-// import Home from "./Pages/Home";
-// import About from "./Pages/About";
-
-// import { createBrowserRouter, RouterProvider } from "react-router-dom";
-// const router = createBrowserRouter([
-//   {
-//     path: "/",
-//     element: <Home />,
-//   },
-//   {
-//     path: "/about",
-//     element: <About />,
-//   },
-// ]);
-// const root = ReactDOM.createRoot(document.getElementById("root"));
-// root.render(
-//   <React.StrictMode>
-//     <RouterProvider router={router} />
-//   </React.StrictMode>
-// );
 
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-// import Loadingpage from "./Pages/Loadingpage";
 import Home from "./Pages/Home";
-// import Blog from "./Pages/Blog";
 import Contact from "./Pages/Contact";
 import About from "./Pages/About";
 import Skills from "./Pages/Skills";
