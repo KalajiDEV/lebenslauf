@@ -53,6 +53,12 @@ const Gallery = () => {
     <>
       <Nav />
       <div className="container">
+        <div className="desc">
+          <p>
+            Here are a few pictures I took on the street, I am interested in
+            taking pictures.
+          </p>
+        </div>
         <div id="box-gallery" className="gallery_box">
           <div>
             <img className="gallery" src={Pic} alt="" />

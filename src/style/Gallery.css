@@ -1,21 +1,10 @@
-.contact,
-.blog {
-  min-height: 100vh;
-  color: #dba507;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-transform: uppercase;
-}
-
 .gallery_box {
-  border: 2px solid #dba507;
-  padding: 100px 0;
+  padding: 30px 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-content: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .gallery_box img {
   max-width: 350px;
@@ -25,7 +14,7 @@
   transition: 0.2s ease;
 }
 .gallery_box img:hover {
-  transform: scale(1.4);
+  transform: scale(1.2);
 }
 
 .gallery_box .viewPic {
@@ -38,4 +27,36 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.desc {
+  padding: 70px 0 0;
+  color: #ccc;
+  text-align: center;
+}
+
+.desc p {
+  text-transform: capitalize;
+  font-size: 22px;
+  padding: 20px;
+}
+
+@media (max-width: 1100px) {
+  .gallery_box {
+    justify-content: space-around;
+  }
+  .gallery_box img {
+    max-width: 400px;
+  }
+  .desc p {
+    font-size: 18px;
+    max-width: 500px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 400px) {
+  .gallery_box img {
+    max-width: 100%;
+  }
 }
