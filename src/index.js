@@ -1,4 +1,3 @@
-
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
@@ -7,6 +6,7 @@ import Contact from "./Pages/Contact";
 import About from "./Pages/About";
 import Skills from "./Pages/Skills";
 import Gallery from "./Pages/Gallery";
+import NotfoundPage from "./Pages/NotfoundPage";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Ausbildung from "./About-Pages/Ausbildung";
@@ -19,7 +19,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
-    errorElement: <ErrorPage />,
+    errorElement: <NotfoundPage />,
   },
   {
     path: "/Home",

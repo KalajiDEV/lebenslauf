@@ -21,9 +21,10 @@ function Navbar() {
           <nav ref={navRef}>
             <NavLink to="/Home">home</NavLink>
             <NavLink to="/Skills">Skills</NavLink>
-            <NavLink to="/about">About</NavLink>
             <NavLink to="/Gallery">Gallery</NavLink>
+            <NavLink to="/projects">Projects</NavLink>
             <NavLink to="/contact">Contact</NavLink>
+            <NavLink to="/about">About</NavLink>
             <button className="nav-btn nav-close-btn" onClick={showNavbar}>
               <FaTimes />
             </button>
