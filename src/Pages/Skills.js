@@ -14,10 +14,15 @@ import Physics from "../img/physics.png";
 import Premiere from "../img/premiere-pro.png";
 import Xd from "../img/xd.png";
 import Html from "../img/html.png";
+import { Helmet } from "react-helmet-async";
 
 const Skills = () => {
   return (
     <div className="skills">
+      <Helmet>
+        <title>skills</title>
+        <meta name="description" content="skills Page " />
+      </Helmet>
       <Nav />
       <div className="container">
         <div className="imgs">

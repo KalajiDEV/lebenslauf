@@ -12,8 +12,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Ausbildung from "./About-Pages/Ausbildung";
 import Praktikum from "./About-Pages/Praktikum";
 import Berufserfahrungen from "./About-Pages/Berufserfahrungen";
-
-import ErrorPage from "./Pages/ErrorPage";
+import { HelmetProvider } from "react-helmet-async";
 
 const router = createBrowserRouter([
   {
@@ -58,6 +57,9 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    {/* here input my HelmetProvider than ==  APP or Router  */}
+    <HelmetProvider>
+      <RouterProvider router={router} />
+    </HelmetProvider>
   </React.StrictMode>
 );

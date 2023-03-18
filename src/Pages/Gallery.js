@@ -1,7 +1,7 @@
 import React from "react";
 import Nav from "../components/Nav";
 import "../style/Gallery.css";
-
+import { Helmet } from "react-helmet-async";
 import Pic from "../img/Lightroom Gallery/2022_07_03_23_45_IMG_4788.JPG";
 import Pic1 from "../img/Lightroom Gallery/2022_07_04_10_42_IMG_4792.JPG";
 import Pic2 from "../img/Lightroom Gallery/2022_08_14_02_09_IMG_5639.JPG";
@@ -51,6 +51,10 @@ import Pic37 from "../img/Lightroom Gallery/Snapseed.JPG";
 const Gallery = () => {
   return (
     <>
+      <Helmet>
+        <title>Gallery</title>
+        <meta name="description" content="Gallery Page " />
+      </Helmet>
       <Nav />
       <div className="container">
         <div className="desc">

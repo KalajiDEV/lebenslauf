@@ -3,10 +3,15 @@ import AboutNav from "../components/About-nav";
 import "../style/About.css";
 import Pic from "../img/myPic.jpg";
 import React from "react";
+import { Helmet } from "react-helmet-async";
 
 const About = () => {
   return (
     <>
+      <Helmet>
+        <title>About</title>
+        <meta name="description" content="about page " />
+      </Helmet>
       <Nav />
       <AboutNav />
 

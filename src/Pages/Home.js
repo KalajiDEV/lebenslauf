@@ -3,6 +3,7 @@ import React from "react";
 import Nav from "../components/Nav";
 import { Link } from "react-router-dom";
 import Pic from "../img/KalajiDev-pic.png";
+import { Helmet } from "react-helmet-async";
 import {
   AiOutlineInstagram,
   AiFillGithub,
@@ -13,6 +14,11 @@ import {
 const AboutMe = () => {
   return (
     <div className="container">
+      <Helmet>
+        <title>Home</title>
+        <meta name="description" content="Home page " />
+        <style type="text/css">{``}</style>
+      </Helmet>
       <div className="Home">
         <Nav />
         <div className="homePage">
@@ -31,16 +37,10 @@ const AboutMe = () => {
               >
                 <AiOutlineInstagram />
               </a>
-              <a
-                target="_blank"
-                href="https://github.com/KalajiDEV"
-              >
+              <a target="_blank" href="https://github.com/KalajiDEV">
                 <AiFillGithub />
               </a>
-              <a
-                target="_blank"
-                href="mailto: mouhmedkalaji30@gmail.com"
-              >
+              <a target="_blank" href="mailto: mouhmedkalaji30@gmail.com">
                 <AiOutlineMail />
               </a>
               <a rel="noreferrer" target="_blank" href="/">
