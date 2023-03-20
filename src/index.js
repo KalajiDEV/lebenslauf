@@ -13,7 +13,7 @@ import Ausbildung from "./About-Pages/Ausbildung";
 import Praktikum from "./About-Pages/Praktikum";
 import Berufserfahrungen from "./About-Pages/Berufserfahrungen";
 import { HelmetProvider } from "react-helmet-async";
-
+import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -63,3 +63,5 @@ root.render(
     </HelmetProvider>
   </React.StrictMode>
 );
+
+serviceWorkerRegistration.register();
